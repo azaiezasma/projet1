@@ -57,3 +57,26 @@ public boolean equals(Object obj) {
 		return true;
 }
 svp q1q m'aider de creer un code main 
+package TestPg;
+
+import info.*;
+import java.util.Scanner ;
+ 
+public class Programme_P {
+
+	public static void main(String[] args) {
+		Scanner x= new Scanner (System.in);
+		Produit prod =new Produit("ph");
+		Produit p[]=new Produit [3];
+		
+		System.out.println ("Saisir un produit");
+		p[0]=new Produit ( x.nextInt(), x.next());
+		System.out.println ("Saisir un  PC");
+		p[1]= new PC (x.nextInt(), x.next(), x.nextDouble(), x.nextInt());
+		System.out.println ("donner PC");
+		p[2]= new PC (x.nextInt(), x.next(), x.nextDouble(), x.nextInt() );
+		for(int i=0 ; i<3 ; i++) {
+		if( p[i].equals(q)) {
+		System.out.println ( "les info "+ p[i].toString());
+			}
+			}
